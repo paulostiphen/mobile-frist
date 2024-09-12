@@ -1,0 +1,145 @@
+:root{
+    --primary-color:#3498db;
+    --secondary-color:#2c3e50;
+    --text-color: #333;
+    --bg-color: #f4f4f4;
+    --meta-color: #777;
+    --heding-font: Arial, sans-serif;
+    --body-font: helvetica, sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: var(--body-font);
+    background-color: var(--bg-color);
+    color: var(--text-color)
+}
+
+header{
+    background-color: var(--primary-color);
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav ul{
+list-style-type:none;
+
+}
+
+nav ul li{
+    display: inline;
+    margin: 0 10px;
+    padding: 1rem;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+main{
+    padding: 1rem;
+}
+
+article{
+    background-color: white;
+    margin-bottom: 1.8rem;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+article img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.post-meta{
+    font-size: 0.8rem;
+    color: var(--meta-color);
+    margin-bottom: 0.5rem;
+}
+
+.category{
+    font-weight: bold;
+    margin-right: 1rem;
+}
+
+aside {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 1rem;
+    border-bottom: 5px;
+}
+
+aside ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0.8rem;
+}
+
+aside ul li{
+    padding: 0.2rem;
+
+}
+   
+aside ul li a {
+    color:white;
+    text-decoration: none;
+}
+
+
+footer{
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+@media (min-width: 768px){
+    main {
+        display:flex;
+        flex-wrap: wrap;
+    }
+    .posts{
+        flex: 2;
+        margin-right: 1rem;
+        margin-top: -1rem;
+    }
+    aside{
+        flex: 1;
+        margin-bottom: 1rem;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+@media(min-width: 1024px){
+    main{
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 2rem;
+    }
+    .posts {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    
+    }
+        
+    
+
+}
+
